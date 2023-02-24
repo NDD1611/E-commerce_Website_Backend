@@ -1,10 +1,13 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "0383836489a",
     "database": "tgdd",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "query": {
+      "raw": true
+    }
   },
   "test": {
     "username": "root",

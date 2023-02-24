@@ -3,11 +3,16 @@ const app = express()
 require('dotenv').config();
 const cors = require('cors')
 const fs = require('fs');
+const bodyParser = require('body-parser')
 
 const initWebRoutes = require('./route/routes.js')
 
 app.use('/public', express.static('public'))
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 app.use(cors())
+
 
 initWebRoutes(app)
 
