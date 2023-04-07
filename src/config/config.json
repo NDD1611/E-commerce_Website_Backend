@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "0383836489a",
+    "password": process.env.PASS_DATABASE,
     "database": "tgdd",
     "host": "127.0.0.1",
     "dialect": "mysql",
